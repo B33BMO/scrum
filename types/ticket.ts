@@ -8,6 +8,7 @@ export interface AteraTicket {
   createdDate: string;
   customerName?: string;
   assignedTo?: string;
+  customerID?: number; // Added for filtering
 }
 
 export interface ColumnConfig {
@@ -17,4 +18,4 @@ export interface ColumnConfig {
   color: string;
 }
 
-export type TicketStatus = 'New' | 'InProgress' | 'Resolved' | 'Closed' | 'Waiting';
+export type TicketStatus = 'New' | 'InProgress' | 'Resolved' | 'Closed' | 'Waiting' | 'Open';
